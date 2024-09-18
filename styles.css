@@ -1,0 +1,221 @@
+
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+header {
+    background-color: #5BFEFF; 
+    color: #000000;
+    padding: 1em 0;
+    display: flex; 
+    align-items: center;
+    text-align: center;
+    
+    
+}
+
+nav ul {
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+    display: flex; 
+    margin-left: 180px;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    position: relative;
+    text-decoration: none;  
+    color: #333;            
+    padding: 8px 12px;      
+    border: 1px solid transparent; 
+    left: 100px;
+}
+
+nav ul li a:hover {
+    background-color: #e8e8e8; 
+    border: 1px solid #ccc;     
+}
+
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    color:#333;
+    font-weight: bolder;
+    text-align: center;
+
+}
+h3{
+        font-family: Arial, Helvetica, sans-serif;
+        color:#333;
+        font-weight: bolder;
+        text-align: center;
+    }
+
+.neuroplasticityImage {
+    max-width: 100%; 
+    height: auto;  
+    display: block;  
+    margin: 20px auto; 
+}
+.bookImage {
+    max-width: 100%; 
+    height: auto;  
+    display: block;  
+    margin: 20px auto; 
+}
+
+.loveYourBrainImage{
+    max-width: 100%; 
+    height: auto;  
+    display: block;  
+    margin: 20px auto; 
+}
+.reprogramImage{
+    max-width: 100%; 
+    height: auto;  
+    display: block;  
+    margin: 20px auto; 
+}
+.MoraImage{
+    max-width: 100%; 
+    height: auto;  
+    display: block;  
+    margin: 20px auto; 
+}
+.CameronImage{
+    max-width: 100%; 
+    height: auto;  
+    display: block;  
+    margin: 20px auto; 
+}
+main {
+    display: flex;
+}
+
+aside {
+    flex: 0 0 25%;
+    background-color: #e8e8e8;
+}
+
+section {
+    flex: 1;
+    padding: 20px;
+}
+
+
+.flip-card {
+    perspective: 800px;
+}
+
+.flip-card-inner {
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+
+
+.resource-category {
+    margin-bottom: 20px; 
+}
+
+.resource-category ul li {
+    margin-bottom: 5px;
+} 
+
+
+
+.story {
+    display: flex; 
+    align-items: center; 
+    margin-bottom: 25px;
+    border: 1px solid #ddd; 
+    padding: 15px; 
+}
+
+.story img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%; 
+    margin-right: 15px;
+}
+
+
+
+footer{
+    position:fixed ;
+    bottom: 0;
+    width: 100%;
+
+    background-color: #5BFEFF;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:large;
+    color: #000000;
+
+}
+
+
+/* Media Queries for Responsiveness */
+
+/* Large screen sizes (desktops, laptops) */
+@media (min-width: 992px) {
+    .container {
+        width: 90%; 
+        max-width: 1100px; 
+    } 
+}
+
+/* Medium screen sizes (tablets)  */
+@media (min-width: 768px) and (max-width: 991px) {
+    .container {
+        width: 95%; 
+    }
+
+   
+    nav ul li {
+        margin: 0 5px; 
+    }
+}
+
+/* Small screen sizes (phones) */
+@media (max-width: 767px) {
+    header {
+        text-align: center; 
+    }
+
+    nav ul {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    nav ul li {
+        margin: 5px 0; 
+    }
+
+    .story {
+        flex-direction: column; 
+        align-items: flex-start; 
+    }
+
+    .story img {
+        margin-right: 0; 
+        margin-bottom: 10px; 
+    }
+} 
